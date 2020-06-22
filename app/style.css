@@ -1,0 +1,65 @@
+body {
+    background: url(world-map.png) no-repeat fixed center;
+    background-size: cover;
+}
+
+.card-container {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mem-card {
+    position: relative;
+    width: 20%;
+    height: 33.333%;
+    margin: 2px;
+    transform: scale(1);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mem-card:active {
+    transform: scale(0.95);
+    transition: transform .2s;
+}
+
+.card-body {
+    padding-top: 45%;
+    text-align: center;
+}
+
+.front {
+    position: absolute;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.back {
+    position: absolute;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.card-container span {
+    transform: scale(3);
+}
+
+.flip {
+    z-index: 0!important;
+}
+
+.text-primary {
+    color: black!important;
+    font-size: 30px;
+    font-weight: bold;
+}
+
